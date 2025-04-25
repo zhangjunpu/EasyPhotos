@@ -1,5 +1,27 @@
 # EasyPhotos    
-[![](https://jitpack.io/v/HuanTanSheng/EasyPhotos.svg)](https://jitpack.io/#HuanTanSheng/EasyPhotos)    
+修改自 https://github.com/HuanTanSheng/EasyPhotos
+
+v3.1.6
+
+- 修复视频预览闪退bug
+
+```
+allprojects {
+	repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+```
+dependencies {
+	implementation 'com.github.zhangjunpu:EasyPhotos:3.1.6'
+}
+```
+
+[![](https://jitpack.io/v/zhangjunpu/EasyPhotos.svg)](https://jitpack.io/#zhangjunpu/EasyPhotos)
+
+
 
 QQ交流群：[EasyPhotos开发交流群：288600953](https://jq.qq.com/?_wv=1027&k=5QGgCDe)    (已满)     
 
@@ -33,8 +55,8 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
 |文字贴纸编辑页 | 示例功能列表 | 示例功能列表 |
 |:-------:|:---------:|:---------:|
 |![](https://i.loli.net/2021/03/03/4zBbLmpnxiHd5Jy.png) | ![](https://i.loli.net/2021/03/03/PUk2rTl5CRsxNJb.png) | ![](https://i.loli.net/2021/03/03/123Jtx7AlmDc9Lw.png)|    
-    
-    
+
+
 ## 产品特色    
 - 兼容android 11
 - 兼容android 10
@@ -89,9 +111,9 @@ dependencies {
         //implementation 'com.github.HuanTanSheng:EasyPhotos:2.4.5' //还没有升级到androidx的同学可以用这个版本，但不支持android 10，暂停维护
    
 }
-```    
-    
-    
+```
+
+​    
 
 
     
@@ -105,10 +127,10 @@ dependencies {
 	//把3.4.2改成你对应的版本即可，如果不清楚对应版本可以看看你其他正常项目的这里是怎么写的  
 	}
 
-```    
-    
+```
+
 ## 关于混淆    
-  
+
 **EasyPhotos的混淆：**  
 ```pro  
 
@@ -116,9 +138,9 @@ dependencies {
 
 ```
 
-    
-    
-  
+
+​    
+
 ## EasyPhotos文档总录    
 
 ## [EasyPhotos文档总录](https://github.com/HuanTanSheng/EasyPhotos/wiki)
@@ -136,6 +158,7 @@ dependencies {
 * [12-配置ImageEngine，支持所有图片加载库](https://github.com/HuanTanSheng/EasyPhotos/wiki/12-%E9%85%8D%E7%BD%AEImageEngine%EF%BC%8C%E6%94%AF%E6%8C%81%E6%89%80%E6%9C%89%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E5%BA%93)
 
     
+
 QQ交流群：[288600953](https://jq.qq.com/?_wv=1027&k=5QGgCDe)    (已满)
 QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_wv=1027&k=t5JZYhwa)
     
@@ -143,7 +166,7 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
            
 	   
 ## 感谢    
-     
+
 [PhotoView](https://github.com/chrisbanes/PhotoView)：一个强大的图片缩放库，由[chrisbanes](https://github.com/chrisbanes) 大神编写    
     
 [PuzzleView](https://github.com/wuapnjie/PuzzleView)：一个强大的拼图库，我的拼图功能是在此基础上实现，这个库由[wuapnjie](https://github.com/wuapnjie) 编写。    
@@ -160,7 +183,7 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
 **3.1.5：**
 - 新增：public AlbumBuilder setSelectedPhotos(ArrayList<Photo> selectedPhotos,boolean isSequentialSelectedPhotos)    
        可自定义当传入已选中图片时，是否按照之前选中的顺序排序
-  
+
 **3.1.4：**    
 - 优化：多类型互斥选择时，最大选择数按照已选类型动态匹配 
 
@@ -238,11 +261,13 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
 - 修复：仅显示视频时，全部视频文件夹视频重复添加问题
 - 修复：点击视频无法播放问题
 - 感谢：该版本由[SMask](https://github.com/SMask)贡献 
-   
+  
+
 **2.4.4：**     
 - 修复：修复2.4.3版本引发的图片数据加载缓慢问题
 - 感谢：该版本由[joker-fu](https://github.com/joker-fu)贡献
-   
+  
+
 **2.4.3：**     
 - 新增：start(SelectCallback callback)启动方式，通过接口回调数据
 - 新增：filter(String... types)方式控制只显示的文件类型，支持Type.GIF和Type.VIDEO，前提是已经选择显示了gif和video
@@ -252,11 +277,13 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
 - 优化：预览页
 - 感谢：该版本由[joker-fu](https://github.com/joker-fu)、[SMask](https://github.com/SMask)贡献 
 - 提示：新的api详见[wiki](https://github.com/HuanTanSheng/EasyPhotos/wiki/02-%E7%9B%B8%E6%9C%BA%E4%B8%8E%E7%9B%B8%E5%86%8C) 
-   
+  
+
 **2.4.1：**     
 - 优化：2.4.0中的代码
 - 感谢：该版本由[joker-fu](https://github.com/joker-fu)、[SMask](https://github.com/SMask)贡献
         
+
 **2.4.0：**     
 - 感谢：该版本由[joker-fu](https://github.com/joker-fu)贡献
 - 新增：视频选择功能    
@@ -269,28 +296,33 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
 - 优化：相册UI（将原底部操作栏中间的设置按钮样式改为编辑样式）        
 - 新增：相册页底部操作栏中间的编辑按钮，会根据开发者配置的清空按钮、原图按钮、拼图按钮使用情况进行显示或隐藏。（当清空按钮、原图按钮、拼图按钮都不显示时，编辑按钮隐藏。其余条件均显示。）    
 - 新增：可配置相册页清空按钮是否显示（详见wiki）       
-    
+  
+
 **2.3.5：**     
 - 修复：修复文字贴纸自动生成日期错误    
 - 优化：AlbumModel类，更加节省内存 （感谢@ofexe）   
 - 升级：compileSdkVersion 升级为28，buildToolsVersion 升级为 '28.0.3'    
-    
+  
+
 **2.3.4：**    
 - 修复：坚果pro和荣耀8在特殊情况下无法获取媒体文件路径的问题        
-    
+  
+
 **2.3.3：**    
 - 优化：过滤媒体库中存在但实际不存在的图片    
-    
+  
+
 **2.3.2：**    
 - 优化：状态栏颜色独立为easy_photos_status_bar    
-    
+  
 
 **2.3.1：**    
 - 新增：调用相册支持Fragment直接调用，走Fragment的result回调    
 - 修复：三星S3拍照错误     
 - 修复：魅族用户在极端操作下的权限错误     
 - 修复：app在后台时，因设备内存不足而回收资源后，在任务列表中启动app后的异常    
-    
+  
+
 **2.3.0：**    
 - 修复4.4.3YouTaPhone拍照时相机停止运行错误    
 - 修复相册中没有图片情况下，EasyPhotos自动前往相机拍照时，发生的错误    
@@ -311,8 +343,9 @@ QQ交流群：[EasyPhotos开发交流群二群：212324053](https://jq.qq.com/?_
 - bug修复：在预览页点击最后一张的选择无效，以及因此产生的数组越界bug    
 - bug修复：极少情况下的预览页直接返回产生的空指针问题    
 - 感谢@zijinzhiyun 反馈以上bug
-    
-    
+      
+  
+
 **2.2.6：**    
 - api修改：为统一api标准，将所有返回Key统一为EasyPhotos.RESULT_PHOTOS和EasyPhotos.RESULT_PATHS。带来的改变就是单独使用拼图功能时的图片返回Key改为EasyPhotos.RESULT_PHOTOS和EasyPhotos.RESULT_PATHS，去除原来的EasyPhotos.RESULT_PUZZLE_PHOTO和-
 EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
@@ -334,6 +367,7 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
 - 修改文字贴纸的文字编辑页面中，底部操作栏的背景色为固定色值（其实也可以改，看看EasyPhotos的color文件你就知道怎么改）
 
     
+
 **2.1.0：**    
 - 新增功能：EasyPhotos智能识别状态栏的背景颜色，当其趋近于白色时，智能适配深色状态栏字体。（该功能仅对6.0以上系统生效，并没有适配6.0以下的小米和魅族，如有需要可以加群交流）    
 - 新增功能：可配置是否显示Gif动图    
@@ -342,7 +376,7 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
 - 新增字段：    
 ````java    
 <string name="gif_easy_photos">动图</string>    
-````    
+````
 具体查看[11-多语言](https://github.com/HuanTanSheng/EasyPhotos/wiki/11-%E5%A4%9A%E8%AF%AD%E8%A8%80)    
 
 - 内部升级：最新版编译工具和最新版sdk
@@ -351,8 +385,9 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
 - 升级：Glide到4.5.0（不影响低版本使用）    
 - 修复：拼一张功能因图片过多过大导致的oom问题    
 - 感谢@[Beiler](https://github.com/beiler) 提出的反馈      
+  
     
-    
+
 **2.0.1：**    
 - 修复bug：单独使用拼图功能时，以图片路径为参数时产生的数组越界bug。   
 
@@ -384,7 +419,7 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
     <string name="done_easy_photos">完成</string>
     <string name="cancel_easy_photos">取消</string>
     <string name="template_easy_photos">模板</string>    
-```   
+```
 - 新增色值：    
 ```java   
     <!--图片预览页-->
@@ -399,7 +434,7 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
     <color name="puzzle_bottom_bar_line_easy_photos">#ee3a3a3e</color>//拼图的底部栏间隔颜色
     <color name="puzzle_photo_background">#ffffff</color>//图片的背景颜色    
 ```
-    
+
 **1.2.8：**    
 - 修复'选中图片列表'点击状态下与'大图列表和选择器'的联动错误    
 
@@ -410,7 +445,7 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
 ```java    
 <color name="preview_bottom_bar_easy_photos">#eb212123</color>//预览页的底部栏和选中图片列表背景颜色    
 <color name="preview_bottom_bar_line_easy_photos">#ee3a3a3e</color>//预览页的底部栏与选中图片列表的分割线颜色    
-```   
+```
 
 **1.2.6：**    
 - 正式开放，投入使用   
@@ -472,9 +507,9 @@ EasyPhotos.RESULT_PUZZLE_PATH这两个Key。      
 - 根据图片宽高进行过滤 
 - 修复无图片显示时的异常    
 - 内部处理权限问题，无需配置，无需处理运行时权限
+  
     
-    
-    
-
+  
+  
   
 
